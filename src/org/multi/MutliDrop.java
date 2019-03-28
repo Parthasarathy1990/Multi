@@ -18,14 +18,17 @@ public class MutliDrop {
 		List<WebElement> opt = s.getOptions();
 		for (WebElement allopt : opt) {
 			String text = allopt.getText();
-			System.out.println(text);
-			s.selectByVisibleText(text);
-			if (text.equals("Switch Commands") || text.equals("WebElement Commands")) {
-				s.selectByVisibleText(text);
+			//System.out.println(text);
+			//s.selectByVisibleText(text);
+			s.selectByIndex(3);
+			System.out.println(s);
+			//if (text.equals("Switch Commands") || text.equals("WebElement Commands")) {
+				//s.selectByVisibleText(text);
+				//System.out.println(text);
 				
 			}
 			
 		}
 	}
 
-}
+
